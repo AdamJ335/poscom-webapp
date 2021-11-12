@@ -1,0 +1,8 @@
+navbar {
+  display: block;
+  box-sizing: border-box;
+}
+post {
+  display: block;
+  padding:1em;
+}
