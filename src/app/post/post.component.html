@@ -1,8 +1,12 @@
 <h2>Posts</h2>
 
-<div>
-  <p> {{post.title}} </p>
-  <p> {{post.description}} </p>
-  <p> {{post.points}} </p>
-  <p> {{post.tags}} </p>
-</div>
+<ul>
+  <li *ngFor="let post of posts" >
+    <div>
+      <p> {{post.title}} </p>
+      <p> {{post.description}} </p>
+      <p> {{post.points}} </p>
+      <p> {{post.tags}} </p>
+    </div>
+  </li>
+</ul>
