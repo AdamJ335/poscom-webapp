@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {MatIconModule} from '@angular/material/icon';
 
 import { AppComponent } from './app.component';
 import { PostComponent } from './post/post.component';
@@ -23,11 +24,16 @@ import { NotFoundComponent } from './not-found/not-found.component';
     RouterModule.forRoot([
       {
         path: '',
-        component: AppComponent
+        component: PostComponent
       },
       {
         path: 'about',
         component: AboutComponent
+      },
+      {
+        path: 'home',
+        redirectTo: '',
+        pathMatch: 'full'
       },
       {
         path: 'profile/:username',
@@ -46,6 +52,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
         component: NotFoundComponent
       }
     ]),
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
