@@ -1,11 +1,15 @@
 .card {
-  background-color: #6001af;
+  background-color: rgba(96, 1, 175, 0.35);
   color: white;
 
   max-width: 18em;
   max-height: 30em;
   display: flex;
-  margin-bottom: 0.5em;
+  /*margin-bottom: 0.5em;*/
+  margin: 0.5em;
+}
+h2 {
+  margin: 0.5em;
 }
 
 .btn-primary {
