@@ -1,0 +1,16 @@
+.card {
+  background-color: #6001af;
+  color: white;
+
+  max-width: 18em;
+  max-height: 30em;
+  display: flex;
+  margin-bottom: 0.5em;
+}
+
+.btn-primary {
+  background-color: beige;
+  color:dimgray;
+
+  margin-right: 2em
+}
