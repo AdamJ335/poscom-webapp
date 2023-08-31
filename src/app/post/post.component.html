@@ -1,12 +1,12 @@
 <h2>Posts</h2>
 
-<ul>
-  <li *ngFor="let post of posts" >
-    <div>
-      <p> {{post.title}} </p>
-      <p> {{post.description}} </p>
-      <p> {{post.points}} </p>
-      <p> {{post.tags}} </p>
-    </div>
-  </li>
-</ul>
+<div *ngFor="let post of posts" class="card" mdbRipple rippleColor="light">
+  <div class="card-body">
+    <h5 class="card-title">{{post.title}}</h5>
+    <p class="card-text">{{post.description}}</p>
+    <p> {{post.points}} </p>
+    <p> {{post.tags}} </p>
+    <button type="button" class="btn btn-primary">UpVote</button>
+    <button type="button" class="btn btn-primary">DownVote</button>
+  </div>
+</div>
